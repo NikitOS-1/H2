@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H2</title>
+    </head>
+    <body>
+        {% block body %}
+        <form method='GET' action='/likes'>
+            {<br>
+                "data": {{the_data}},<br>
+                "error": {{the_error}},<br>
+                "error_message": {{the_error_message}}<br>
+            }<br>
+        </form>
+        {% endblock %}
+    </body>
+</html>
